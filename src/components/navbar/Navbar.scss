@@ -70,5 +70,46 @@
         }
       }
     }
+    .user {
+      height: 48px;
+      display: flex;
+      align-items: center;
+      margin-right: 100px;
+      gap: 10px;
+      position: relative;
+      cursor: pointer;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      span {
+        font-weight: 500;
+      }
+      .options {
+        position: absolute;
+        top: 60px;
+        right: 0px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+        z-index: 999;
+        border: 1px solid lightgrey;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 150px;
+        font-weight: 300;
+        color: gray;
+        .link {
+          font-weight: 500;
+          background-color: white;
+          &:hover {
+            color: #00918a;
+          }
+        }
+      }
+    }
   }
 }
