@@ -1,0 +1,66 @@
+.register_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9abab;
+  .container {
+    position: relative;
+    margin: 50px 0;
+    gap: 30px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 8px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: #232323;
+      margin: 10px 0 20px;
+      align-items: center;
+      background-color: #fff;
+    }
+    form {
+      width: 420px;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #fff;
+      label {
+        width: fit-content;
+        color: #00918a;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #fff;
+      }
+      input {
+        padding: 10px;
+        border: 1px solid rgb(216, 214, 214);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #232323;
+        &:focus {
+          outline: none;
+          border-color: #03ccba;
+        }
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        padding: 20px;
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #03ccba;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background-color: #00918a;
+        }
+      }
+    }
+  }
+}

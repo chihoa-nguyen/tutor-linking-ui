@@ -1,0 +1,145 @@
+.tutor {
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  justify-content: center;
+  background-color: #f7f2ed;
+  .container_tutor {
+    display: flex;
+    gap: 30px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    .profile {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+      align-items: center;
+      gap: 30px;
+      .card-tutor {
+        display: flex;
+        flex-direction: row;
+        img {
+          border-radius: 10px;
+          width: 240px;
+          height: 320px;
+        }
+        .info-reviews {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 0 20px;
+            width: 600px;
+            border-right: 3px solid #00918a;
+            .data {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              span {
+                font-size: 16px;
+                font-weight: 400;
+                white-space: nowrap;
+              }
+              img {
+                width: 20px;
+                height: 20px;
+              }
+              .field_name {
+                font-weight: 600;
+              }
+            }
+          }
+          .reviews {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 0 20px;
+            gap: 20px;
+            .count {
+              font-weight: 700;
+              cursor: pointer;
+              &:hover {
+                color: #00918a;
+              }
+            }
+            .items {
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              width: 500px;
+              .review-item {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                .creater {
+                  display: flex;
+                  gap: 10px;
+                  align-items: end;
+                  span {
+                    font-weight: 600;
+                  }
+                  .time {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: rgb(160, 88, 88);
+                  }
+                }
+                .stars {
+                  display: flex;
+                  align-items: center;
+                  img {
+                    width: 20px;
+                    height: 20px;
+                  }
+                }
+                p {
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .teaching {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 16px;
+        font-weight: 400;
+        color: #232323;
+        border: 1px solid #fff;
+        tr {
+          justify-content: center;
+          border-bottom: 1px solid #fff;
+        }
+        .header {
+          font-weight: 700px;
+          color: #fff;
+        }
+        th {
+          justify-content: center;
+          padding: 15px;
+          text-align: left;
+          border-right: 1px solid #fff;
+          font-weight: 600;
+          max-width: 300px;
+          background-color: #987d9a;
+          white-space: normal;
+          word-wrap: break-word;
+        }
+        .center {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

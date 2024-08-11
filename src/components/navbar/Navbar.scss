@@ -14,7 +14,7 @@
     padding: 20px 0px;
     .logo {
       margin-left: 20px;
-      font-size: 30px;
+      font-size: 32px;
       font-weight: bold;
       color: #00918a;
       cursor: pointer;
@@ -27,7 +27,7 @@
       align-items: center;
       font-weight: 600;
       cursor: pointer;
-      span {
+      .link {
         &:hover {
           color: #03ccba;
         }
@@ -55,6 +55,7 @@
         }
       }
       .login {
+        background-color: #f7f2ed;
         button {
           @extend button;
         }
@@ -64,8 +65,31 @@
           @extend button;
           background-color: #03ccba;
           &:hover {
-            // color: white;
             background-color: #00918a;
+          }
+        }
+        .type {
+          position: absolute;
+          top: 80px;
+          right: 15px;
+          padding: 10px;
+          background-color: white;
+          border-radius: 10px;
+          z-index: 999;
+          border: 1px solid lightgrey;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 95px;
+          font-weight: 600;
+          color: gray;
+          .link {
+            cursor: pointer;
+            background-color: white;
+            font-weight: 500;
+            &:hover {
+              color: #00918a;
+            }
           }
         }
       }
@@ -74,23 +98,30 @@
       height: 48px;
       display: flex;
       align-items: center;
-      margin-right: 100px;
+      margin-right: 30px;
       gap: 10px;
       position: relative;
       cursor: pointer;
       img {
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         object-fit: cover;
       }
+      .cbBox {
+        display: flex;
+        flex-direction: column;
+      }
+      i {
+        color: #00918a;
+      }
       span {
-        font-weight: 500;
+        font-weight: 600;
       }
       .options {
         position: absolute;
         top: 60px;
-        right: 0px;
+        left: 0px;
         padding: 10px;
         background-color: white;
         border-radius: 10px;

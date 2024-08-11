@@ -1,0 +1,88 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9abab;
+  .container {
+    position: relative;
+    margin: 70px 0;
+    background-color: #fff;
+    padding: 30px 10px;
+    border-radius: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 38px;
+      color: #00918a;
+      margin: 20px 0;
+      align-items: center;
+      background-color: #fff;
+    }
+    form {
+      width: 380px;
+      padding: 30px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #fff;
+      label {
+        color: #00918a;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #fff;
+      }
+      input,
+      textarea {
+        font-size: 16px;
+        padding: 15px;
+        border: 1px solid rgb(216, 214, 214);
+        margin-bottom: 20px;
+      }
+      select {
+        padding: 10px;
+        // margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        &:focus {
+          outline: none;
+          border-color: #232323;
+        }
+      }
+      button {
+        border: none;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 30px;
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+        background-color: #1dbf73;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background-color: #00918a;
+        }
+      }
+      span {
+        color: red;
+        font-size: 12px;
+      }
+    }
+    .forgot-password {
+      text-align: right;
+      background-color: #fff;
+      a {
+        color: #52453a;
+        text-decoration: none;
+        font-weight: 600;
+        background-color: #fff;
+        &:hover {
+          color: #d1bdab;
+        }
+      }
+    }
+  }
+}

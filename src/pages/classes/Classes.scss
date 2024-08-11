@@ -1,0 +1,114 @@
+$primary-color: #03ccba;
+$secondary-color: #00918a;
+$text-color: #232323;
+$border-color: #d8d6d6;
+$background-color: #f5f5f5;
+$white-color: #fff;
+.classes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    .filter {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      p {
+        font-size: 20px;
+        font-weight: 700;
+        color: $secondary-color;
+      }
+      form {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+      }
+      .btns {
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+      select {
+        padding: 5px;
+        font-size: 14px;
+      }
+      .filter-option {
+        position: relative;
+        input {
+          font-size: 14px;
+          padding: 10px;
+        }
+        .options {
+          z-index: 999;
+          height: auto;
+          max-height: 200px;
+          overflow-y: auto;
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          position: absolute;
+          padding: 10px;
+          background-color: #fff;
+          border-radius: 5px;
+          .checkbox-item {
+            display: flex;
+            gap: 5px;
+            width: fit-content;
+            input {
+            }
+            label {
+              font-weight: 500;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      button {
+        width: 140px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: $primary-color;
+        cursor: pointer;
+        &:hover {
+          color: $white-color;
+          background-color: $secondary-color;
+        }
+      }
+      .suitable {
+        background-color: #ebded5;
+        &:hover {
+          color: $white-color;
+          background-color: #d1bdab;
+        }
+      }
+    }
+    .result-filter {
+      width: 1320px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      p {
+        font-weight: 600;
+      }
+      .count {
+        margin-left: 10px;
+      }
+    }
+  }
+}
